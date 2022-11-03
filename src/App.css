@@ -828,6 +828,12 @@ input {
     width: 15rem;
     font-size: 1.3rem;
   }
+
+  .yearResolution,
+  .yearReview {
+    width: 13rem;
+    font-size: 1.1rem;
+  }
 }
 
 @media(max-width:300px) {
@@ -871,6 +877,6 @@ input {
   .yearResolution,
   .yearReview {
     width: 13rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
