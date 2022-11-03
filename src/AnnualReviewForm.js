@@ -5,7 +5,7 @@ function AnnualReviewForm(props) {
     // this state will track user inputs from the form
     const [songInput, setSongInput] = useState('');
     const [bookInput, setBookInput] = useState('');
-    const [showInput, setShowInput] = useState('');
+    const [movieInput, setMovieInput] = useState('');
     const [placeInput, setPlaceInput] = useState('');
     const [momentInput, setMomentInput] = useState('');
     const [mindInput, setMindInput] = useState('');
@@ -18,8 +18,8 @@ function AnnualReviewForm(props) {
     const handleBookInput = (e) => {
         setBookInput(e.currentTarget.value)
     }
-    const handleShowInput = (e) => {
-        setShowInput(e.currentTarget.value)
+    const handleMovieInput = (e) => {
+        setMovieInput(e.currentTarget.value)
     }
     const handlePlaceInput = (e) => {
         setPlaceInput(e.currentTarget.value)
@@ -33,7 +33,7 @@ function AnnualReviewForm(props) {
     }
 
     //gather user's input
-    const savedReviewData = { song: songInput, book: bookInput, show: showInput, place: placeInput, moment: momentInput, mind: mindInput }
+    const savedReviewData = { song: songInput, book: bookInput, movie: movieInput, place: placeInput, moment: momentInput, mind: mindInput }
 
 
      //get the year variable
@@ -55,11 +55,11 @@ function AnnualReviewForm(props) {
                     id="book"
                     onChange={handleBookInput}
                     value={bookInput} />
-                <label htmlFor="show">🎬 Favorite Movie</label>
+                <label htmlFor="movie">🎬 Favorite Movie</label>
                 <input type="text"
-                    id="show"
-                    onChange={handleShowInput}
-                    value={showInput} />
+                    id="movie"
+                    onChange={handleMovieInput}
+                    value={movieInput} />
                 <label htmlFor="place">🌍 Favorite Place</label>
                 <input type="text"
                     id="place"

@@ -29,7 +29,7 @@ function AnnualReview() {
         })
     }, [])
 
-    //control what happens when click 'submit' in AnnualReviewForm components
+    //control what happens when click 'submit' in AnnualReviewForm component
     const getFormState = (e,getSavedResolutionData) => {
         //prevent form from submitting
         e.preventDefault();
@@ -40,6 +40,8 @@ function AnnualReview() {
         const dbRef = ref(database, "/review")
 
         push(dbRef,getSavedResolutionData);
+
+       
        
     }
 

@@ -19,7 +19,7 @@ function App() {
           <h1>New Year Notebook</h1>
         </Link>
         <h2>Close eyes to old ends</h2>
-        <h2>Open heart to new beginnings !</h2>
+        <h2>Open your heart to new beginnings !</h2>
       </div>
 
       <Routes>

@@ -394,8 +394,9 @@ h1 {
   background-color: rgb(248, 235, 216);
   color: rgb(131, 125, 128);
   padding: .6rem .6rem;
-  width: 13.5rem;
+  width: 17rem;
   animation: colorshift 7s ease infinite;
+  font-size: 1.5rem;
 }
 
 @keyframes colorshift {
@@ -598,6 +599,11 @@ input {
 
 
 /* resolution style */
+.resolutionForm {
+  display: flex;
+  flex-direction: column;
+}
+
 .resolutionForm form {
   text-align: center;
   margin: 0 auto 3rem auto;
@@ -641,16 +647,18 @@ input {
 .resolutionImgContainer {
   flex: 1;
   display: flex;
-  
+  justify-content: center;
 }
 
 .resolutionImg {
-  height: 7rem;
+  height: 8rem;
   width: 8rem;
   object-fit: cover;
   border-radius: 4rem;
   margin: auto .2rem;
 }
+
+
 
 .resolutionText {
   flex: 1;
@@ -660,8 +668,8 @@ input {
 
 }
 
-.resolutionText p{
-  margin: 50% .1rem;
+.resolutionText p {
+  margin: 40% .1rem;
 }
 
 .resolutionForm .remove {
@@ -669,20 +677,22 @@ input {
   font-size: 1rem;
   right: -5px;
   top: -26px;
-  padding: 0.1rem 0.3rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+.resolutionForm .back {
+  margin: 1rem auto 2rem auto;
+}
+
+.backLink {
+  text-align: center;
 }
 
 
 
 /* media queries */
-@media (max-width:880px) {
-  .resolutionImg {
-    height: 6rem;
-    width: 7rem;
-  }
-}
-
-@media (max-width:820px) {
+@media (max-width:970px) {
   .buttonOption {
     display: flex;
     flex-direction: column;
@@ -698,20 +708,18 @@ input {
     margin-bottom: 2rem;
   }
 
+}
+
+@media (max-width:820px) {
+
   form {
     width: 80%;
   }
 
-}
-
-
-@media (max-width:780px) {
-  .resolutionImg {
-    height: 5rem;
-    width: 6rem;
-    border-radius: 3rem;
-    margin: auto;
+  .displayResolution li {
+    width: 70%;
   }
+
 }
 
 @media (max-width:700px) {
@@ -722,8 +730,8 @@ input {
 
 @media (max-width:600px) {
   .resolutionImg {
-    height: 4.5rem;
-    width: 5.5rem;
+    height: 7.5rem;
+    width: 7.5rem;
   }
 }
 
@@ -757,20 +765,27 @@ input {
     width: 90%;
   }
 
-  .resolutionImg {
-    height: 4rem;
-    width: 5rem;
+  .displayResolution li {
+    width: 80%;
   }
+
+  .resolutionImg {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .resolutionForm .remove {
+    right: -5px;
+    top: -20px;
+  }
+
 }
 
 @media (max-width:400px) {
   html {
     font-size: 87%;
   }
-  .resolutionImg {
-    height: 3.5rem;
-    width: 4.5rem;
-  }
+
 }
 
 @media(max-width:360px) {
@@ -804,8 +819,14 @@ input {
   }
 
   .resolutionImg {
-    height: 3rem;
-    width: 4rem;
+    height: 5.8rem;
+    width: 5.8rem;
+  }
+
+  .yearResolution,
+  .yearReview {
+    width: 15rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -839,7 +860,17 @@ input {
   }
 
   .resolutionImg {
-    height: 2.5rem;
-    width: 3.5rem;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .resolutionForm .remove {
+    top: -18px;
+  }
+
+  .yearResolution,
+  .yearReview {
+    width: 13rem;
+    font-size: 1.1rem;
   }
 }

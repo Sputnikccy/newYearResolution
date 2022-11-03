@@ -27,9 +27,9 @@ const DisplayResolutions = (props) => {
                             
                         </div>
                        
-                        <button className="remove" onClick={()=>{handleRemove(resolution.id)}}>x</button>
-                       
+                        <button className="remove" onClick={()=>{handleRemove(resolution.id)}}>x</button>      
                     </li>
+                    
                 )
             })}
         </ul>
